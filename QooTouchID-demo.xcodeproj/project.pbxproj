@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B0D28DC1F7F777600976813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D28DB1F7F777600976813 /* AppDelegate.m */; };
+		2B0D28DF1F7F777600976813 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D28DE1F7F777600976813 /* ViewController.m */; };
+		2B0D28E21F7F777600976813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D28E01F7F777600976813 /* Main.storyboard */; };
+		2B0D28E41F7F777600976813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D28E31F7F777600976813 /* Assets.xcassets */; };
+		2B0D28E71F7F777600976813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D28E51F7F777600976813 /* LaunchScreen.storyboard */; };
+		2B0D28EA1F7F777600976813 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D28E91F7F777600976813 /* main.m */; };
+		2B0D29001F7F792700976813 /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D28F51F7F792700976813 /* CALayer+Anim.m */; };
+		2B0D29011F7F792700976813 /* PCCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D28F71F7F792700976813 /* PCCircle.m */; };
+		2B0D29021F7F792700976813 /* PCCircleInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D28F91F7F792700976813 /* PCCircleInfoView.m */; };
+		2B0D29031F7F792700976813 /* PCCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D28FB1F7F792700976813 /* PCCircleView.m */; };
+		2B0D29041F7F792700976813 /* PCCircleViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D28FD1F7F792700976813 /* PCCircleViewConst.m */; };
+		2B0D29051F7F792700976813 /* PCLockLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D28FF1F7F792700976813 /* PCLockLabel.m */; };
+		2B0D290C1F7F813300976813 /* QOOUnlockSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D290B1F7F813300976813 /* QOOUnlockSettingVC.m */; };
+		2B0D290F1F7F883600976813 /* QOOGestureVerifyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D290E1F7F883600976813 /* QOOGestureVerifyVC.m */; };
+		2B0D29121F7F88FD00976813 /* QOOGestureSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D29111F7F88FD00976813 /* QOOGestureSettingVC.m */; };
+		2B0D291C1F7F8D0400976813 /* QOOTouchIDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D291B1F7F8D0400976813 /* QOOTouchIDTool.m */; };
+		2B25E68C1F7F92BF00BB1DAA /* QOOHUDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D29211F7F8E1100976813 /* QOOHUDTool.m */; };
+		2B25E68D1F7F930700BB1DAA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D291F1F7F8E1100976813 /* MBProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B0D28D71F7F777600976813 /* QooTouchID-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QooTouchID-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B0D28DA1F7F777600976813 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B0D28DB1F7F777600976813 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B0D28DD1F7F777600976813 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B0D28DE1F7F777600976813 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B0D28E11F7F777600976813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B0D28E31F7F777600976813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B0D28E61F7F777600976813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B0D28E81F7F777600976813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B0D28E91F7F777600976813 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B0D28F41F7F792700976813 /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
+		2B0D28F51F7F792700976813 /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
+		2B0D28F61F7F792700976813 /* PCCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircle.h; sourceTree = "<group>"; };
+		2B0D28F71F7F792700976813 /* PCCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircle.m; sourceTree = "<group>"; };
+		2B0D28F81F7F792700976813 /* PCCircleInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleInfoView.h; sourceTree = "<group>"; };
+		2B0D28F91F7F792700976813 /* PCCircleInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleInfoView.m; sourceTree = "<group>"; };
+		2B0D28FA1F7F792700976813 /* PCCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleView.h; sourceTree = "<group>"; };
+		2B0D28FB1F7F792700976813 /* PCCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleView.m; sourceTree = "<group>"; };
+		2B0D28FC1F7F792700976813 /* PCCircleViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleViewConst.h; sourceTree = "<group>"; };
+		2B0D28FD1F7F792700976813 /* PCCircleViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleViewConst.m; sourceTree = "<group>"; };
+		2B0D28FE1F7F792700976813 /* PCLockLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLockLabel.h; sourceTree = "<group>"; };
+		2B0D28FF1F7F792700976813 /* PCLockLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLockLabel.m; sourceTree = "<group>"; };
+		2B0D29061F7F798A00976813 /* QOOPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QOOPrefixHeader.pch; sourceTree = "<group>"; };
+		2B0D29091F7F7BA900976813 /* QOOConstantsConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QOOConstantsConfig.h; sourceTree = "<group>"; };
+		2B0D290A1F7F813300976813 /* QOOUnlockSettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QOOUnlockSettingVC.h; sourceTree = "<group>"; };
+		2B0D290B1F7F813300976813 /* QOOUnlockSettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QOOUnlockSettingVC.m; sourceTree = "<group>"; };
+		2B0D290D1F7F883600976813 /* QOOGestureVerifyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QOOGestureVerifyVC.h; sourceTree = "<group>"; };
+		2B0D290E1F7F883600976813 /* QOOGestureVerifyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QOOGestureVerifyVC.m; sourceTree = "<group>"; };
+		2B0D29101F7F88FD00976813 /* QOOGestureSettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QOOGestureSettingVC.h; sourceTree = "<group>"; };
+		2B0D29111F7F88FD00976813 /* QOOGestureSettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QOOGestureSettingVC.m; sourceTree = "<group>"; };
+		2B0D291A1F7F8D0400976813 /* QOOTouchIDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QOOTouchIDTool.h; sourceTree = "<group>"; };
+		2B0D291B1F7F8D0400976813 /* QOOTouchIDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QOOTouchIDTool.m; sourceTree = "<group>"; };
+		2B0D291E1F7F8E1100976813 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2B0D291F1F7F8E1100976813 /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2B0D29201F7F8E1100976813 /* QOOHUDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QOOHUDTool.h; sourceTree = "<group>"; };
+		2B0D29211F7F8E1100976813 /* QOOHUDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QOOHUDTool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B0D28D41F7F777600976813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B0D28CE1F7F777600976813 = {
+			isa = PBXGroup;
+			children = (
+				2B0D28D91F7F777600976813 /* QooTouchID-demo */,
+				2B0D28D81F7F777600976813 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B0D28D81F7F777600976813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D28D71F7F777600976813 /* QooTouchID-demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B0D28D91F7F777600976813 /* QooTouchID-demo */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D28DA1F7F777600976813 /* AppDelegate.h */,
+				2B0D28DB1F7F777600976813 /* AppDelegate.m */,
+				2B0D28DD1F7F777600976813 /* ViewController.h */,
+				2B0D28DE1F7F777600976813 /* ViewController.m */,
+				2B0D290A1F7F813300976813 /* QOOUnlockSettingVC.h */,
+				2B0D290B1F7F813300976813 /* QOOUnlockSettingVC.m */,
+				2B0D29131F7F8BFE00976813 /* Gesture */,
+				2B0D29141F7F8C1600976813 /* TouchID */,
+				2B0D28F11F7F792700976813 /* Tools */,
+				2B0D29061F7F798A00976813 /* QOOPrefixHeader.pch */,
+				2B0D29091F7F7BA900976813 /* QOOConstantsConfig.h */,
+				2B0D29081F7F7B6200976813 /* Supporting Files */,
+			);
+			path = "QooTouchID-demo";
+			sourceTree = "<group>";
+		};
+		2B0D28F11F7F792700976813 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D291D1F7F8E1100976813 /* MBProgressHUD */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2B0D29081F7F7B6200976813 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D28E01F7F777600976813 /* Main.storyboard */,
+				2B0D28E51F7F777600976813 /* LaunchScreen.storyboard */,
+				2B0D28E31F7F777600976813 /* Assets.xcassets */,
+				2B0D28E81F7F777600976813 /* Info.plist */,
+				2B0D28E91F7F777600976813 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B0D29131F7F8BFE00976813 /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D29161F7F8C5600976813 /* View */,
+				2B0D29151F7F8C3B00976813 /* Controller */,
+			);
+			path = Gesture;
+			sourceTree = "<group>";
+		};
+		2B0D29141F7F8C1600976813 /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D291A1F7F8D0400976813 /* QOOTouchIDTool.h */,
+				2B0D291B1F7F8D0400976813 /* QOOTouchIDTool.m */,
+			);
+			path = TouchID;
+			sourceTree = "<group>";
+		};
+		2B0D29151F7F8C3B00976813 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D290D1F7F883600976813 /* QOOGestureVerifyVC.h */,
+				2B0D290E1F7F883600976813 /* QOOGestureVerifyVC.m */,
+				2B0D29101F7F88FD00976813 /* QOOGestureSettingVC.h */,
+				2B0D29111F7F88FD00976813 /* QOOGestureSettingVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2B0D29161F7F8C5600976813 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D28F41F7F792700976813 /* CALayer+Anim.h */,
+				2B0D28F51F7F792700976813 /* CALayer+Anim.m */,
+				2B0D28F61F7F792700976813 /* PCCircle.h */,
+				2B0D28F71F7F792700976813 /* PCCircle.m */,
+				2B0D28F81F7F792700976813 /* PCCircleInfoView.h */,
+				2B0D28F91F7F792700976813 /* PCCircleInfoView.m */,
+				2B0D28FA1F7F792700976813 /* PCCircleView.h */,
+				2B0D28FB1F7F792700976813 /* PCCircleView.m */,
+				2B0D28FE1F7F792700976813 /* PCLockLabel.h */,
+				2B0D28FF1F7F792700976813 /* PCLockLabel.m */,
+				2B0D28FC1F7F792700976813 /* PCCircleViewConst.h */,
+				2B0D28FD1F7F792700976813 /* PCCircleViewConst.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B0D291D1F7F8E1100976813 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D291E1F7F8E1100976813 /* MBProgressHUD.h */,
+				2B0D291F1F7F8E1100976813 /* MBProgressHUD.m */,
+				2B0D29201F7F8E1100976813 /* QOOHUDTool.h */,
+				2B0D29211F7F8E1100976813 /* QOOHUDTool.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B0D28D61F7F777600976813 /* QooTouchID-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B0D28ED1F7F777600976813 /* Build configuration list for PBXNativeTarget "QooTouchID-demo" */;
+			buildPhases = (
+				2B0D28D31F7F777600976813 /* Sources */,
+				2B0D28D41F7F777600976813 /* Frameworks */,
+				2B0D28D51F7F777600976813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QooTouchID-demo";
+			productName = "QooTouchID-demo";
+			productReference = 2B0D28D71F7F777600976813 /* QooTouchID-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B0D28CF1F7F777600976813 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Qoo;
+				TargetAttributes = {
+					2B0D28D61F7F777600976813 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2B0D28D21F7F777600976813 /* Build configuration list for PBXProject "QooTouchID-demo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B0D28CE1F7F777600976813;
+			productRefGroup = 2B0D28D81F7F777600976813 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B0D28D61F7F777600976813 /* QooTouchID-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B0D28D51F7F777600976813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0D28E71F7F777600976813 /* LaunchScreen.storyboard in Resources */,
+				2B0D28E41F7F777600976813 /* Assets.xcassets in Resources */,
+				2B0D28E21F7F777600976813 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B0D28D31F7F777600976813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0D290F1F7F883600976813 /* QOOGestureVerifyVC.m in Sources */,
+				2B0D29121F7F88FD00976813 /* QOOGestureSettingVC.m in Sources */,
+				2B0D28DF1F7F777600976813 /* ViewController.m in Sources */,
+				2B0D28EA1F7F777600976813 /* main.m in Sources */,
+				2B0D29011F7F792700976813 /* PCCircle.m in Sources */,
+				2B25E68C1F7F92BF00BB1DAA /* QOOHUDTool.m in Sources */,
+				2B0D29021F7F792700976813 /* PCCircleInfoView.m in Sources */,
+				2B25E68D1F7F930700BB1DAA /* MBProgressHUD.m in Sources */,
+				2B0D29031F7F792700976813 /* PCCircleView.m in Sources */,
+				2B0D290C1F7F813300976813 /* QOOUnlockSettingVC.m in Sources */,
+				2B0D29041F7F792700976813 /* PCCircleViewConst.m in Sources */,
+				2B0D29001F7F792700976813 /* CALayer+Anim.m in Sources */,
+				2B0D28DC1F7F777600976813 /* AppDelegate.m in Sources */,
+				2B0D291C1F7F8D0400976813 /* QOOTouchIDTool.m in Sources */,
+				2B0D29051F7F792700976813 /* PCLockLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B0D28E01F7F777600976813 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B0D28E11F7F777600976813 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B0D28E51F7F777600976813 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B0D28E61F7F777600976813 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B0D28EB1F7F777600976813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B0D28EC1F7F777600976813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B0D28EE1F7F777600976813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 682X543SE7;
+				GCC_PREFIX_HEADER = "/Users/pincai/Desktop/超nice的第三方/QooTouchID-demo/QooTouchID-demo/QOOPrefixHeader.pch";
+				INFOPLIST_FILE = "QooTouchID-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qoo789.QooTouchID-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B0D28EF1F7F777600976813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 682X543SE7;
+				GCC_PREFIX_HEADER = "/Users/pincai/Desktop/超nice的第三方/QooTouchID-demo/QooTouchID-demo/QOOPrefixHeader.pch";
+				INFOPLIST_FILE = "QooTouchID-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qoo789.QooTouchID-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B0D28D21F7F777600976813 /* Build configuration list for PBXProject "QooTouchID-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B0D28EB1F7F777600976813 /* Debug */,
+				2B0D28EC1F7F777600976813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B0D28ED1F7F777600976813 /* Build configuration list for PBXNativeTarget "QooTouchID-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B0D28EE1F7F777600976813 /* Debug */,
+				2B0D28EF1F7F777600976813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B0D28CF1F7F777600976813 /* Project object */;
+}

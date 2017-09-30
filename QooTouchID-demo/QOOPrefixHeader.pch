@@ -1,0 +1,21 @@
+//
+//  QOOPrefixHeader.pch
+//  QooTouchID-demo
+//
+//  Created by pincai on 2017/9/30.
+//  Copyright © 2017年 Qoo. All rights reserved.
+//
+
+#ifndef QOOPrefixHeader_pch
+#define QOOPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <LocalAuthentication/LocalAuthentication.h>
+#import "QOOConstantsConfig.h"
+
+#import "QOOHUDTool.h"
+
+
+#endif /* QOOPrefixHeader_pch */
