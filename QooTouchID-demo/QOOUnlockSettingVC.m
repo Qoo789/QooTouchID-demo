@@ -22,6 +22,21 @@
 @end
 
 @implementation QOOUnlockSettingVC
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    LAContext *context = [[LAContext alloc] init];
+    
+    // 调用系统 API 检查 Touch ID 是否可用
+    NSError *requestError;
+    NSInteger policy = LAPolicyDeviceOwnerAuthenticationWithBiometrics; // LAPolicyDeviceOwnerAuthentication;
+    
+    if (@available(iOS 9.0, *)) { // 9.0之后验证指纹是否被锁
+        NSLog(@"%d", [context canEvaluatePolicy:policy error:&requestError]);
+        self.touchIDLocked = ![context canEvaluatePolicy:policy error:&requestError];
+        [self.tableView reloadData];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,7 +49,6 @@
     t.dataSource = self;
     [self.view addSubview:t];
     self.tableView = t;
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -71,6 +85,7 @@
             cell2.textLabel.textColor = [UIColor blackColor];
         }
         
+        // 设置手势密码
         QOOGestureSettingVC *vc = [[QOOGestureSettingVC alloc] init];
         vc.type = GestureSettingVCTypeSetting;
         [self.navigationController pushViewController:vc animated:YES];
@@ -83,16 +98,12 @@
             cell2 = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]];
             
             self.touchidSwitch.userInteractionEnabled = NO;
-            self.touchidSwitch.on = NO;
             
             cell2.userInteractionEnabled = NO;
             cell2.textLabel.textColor = [UIColor lightGrayColor];
         }
         
-        // 不管指纹有没有被锁定, 关闭手势密码都必须清除指纹
-        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:kFingerprintVerifyKey];
-        
-        // 先验证, 再清空手势
+        // 先验证, 再清空手势和指纹
         QOOGestureVerifyVC *vc = [[QOOGestureVerifyVC alloc] init];
         vc.isToSetNewGesture = NO;
         [self.navigationController pushViewController:vc animated:YES];
@@ -142,7 +153,7 @@
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.touchIDLocked ? 2 : 3;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

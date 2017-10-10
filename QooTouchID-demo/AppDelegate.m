@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "PCCircleViewConst.h"
-#import "QOOGestureVerifyVC.h"
 #import "QOOGestureSettingVC.h"
 #import "QOOTouchIDTool.h"
 
@@ -39,8 +38,6 @@
         self.window.rootViewController = nav;
     }
     
-    
-    
     return YES;
 }
 
@@ -58,6 +55,7 @@
     // 程序进入后台, 记录当前时间
     NSDate *enterBackgroundTime = [NSDate date];
     [[NSUserDefaults standardUserDefaults] setObject:enterBackgroundTime forKey:kEnterBackgroundTimeKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 

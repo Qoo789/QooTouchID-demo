@@ -74,7 +74,11 @@
             } else {
                 [PCCircleViewConst saveGesture:nil Key:gestureOneSaveKey];
                 [PCCircleViewConst saveGesture:nil Key:gestureFinalSaveKey];
-                //                [self.navigationController popToRootViewControllerAnimated:YES];
+                
+                [[NSUserDefaults standardUserDefaults] setBool:NO forKey:kFingerprintVerifyKey];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+                
+//                [self.navigationController popToRootViewControllerAnimated:YES];
                 [self.navigationController popViewControllerAnimated:YES];
             }
             
